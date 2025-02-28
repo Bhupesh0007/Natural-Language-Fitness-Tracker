@@ -1,13 +1,13 @@
 import requests
 from datetime import datetime
 
-APP_ID = "a56b0213"
-API_KEY = "d7613e95eb93dae9549ce7587cf1ec11"
+APP_ID = ""
+API_KEY = ""
 
-GENDER = "MALE"
-WEIGHT_KG = "60"
-HEIGHT = "175.5"
-AGE = "22"
+GENDER = ""
+WEIGHT_KG = ""
+HEIGHT = ""
+AGE = ""
 
 exercise_endpoint = "https://trackapi.nutritionix.com/v2/natural/exercise"
 sheety_endpoint = "https://api.sheety.co/4e1252bfdc3d54a40d55648baab1d285/workoutTracking/workouts"
@@ -50,8 +50,8 @@ for exercise in result["exercises"]:
         url=sheety_endpoint,
         json=sheet_inputs,
         auth=(
-            "bhupesh7",
-            "bhupesh@1509"
+            "username",
+            "password"
         )
     )
 
